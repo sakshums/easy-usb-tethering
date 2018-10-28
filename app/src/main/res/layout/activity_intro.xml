@@ -1,7 +1,8 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".IntroductionActivity">
+    tools:context=".IntroductionActivity"
+    android:background="#ffffff">
 
     <!-- The primary full-screen view. This can be replaced with whatever view
          is needed to present your content, e.g. VideoView, SurfaceView,
@@ -10,7 +11,9 @@
         android:layout_height="match_parent" android:keepScreenOn="true"
         android:textSize="@dimen/intro_text_size" android:gravity="center"
         android:paddingLeft="@dimen/intro_text_size" android:paddingRight="@dimen/intro_text_size"
-        android:text="@string/intro_gotit_content" />
+        android:text="@string/intro_gotit_content"
+        android:textColor="#000000"
+        />
 
     <!-- This FrameLayout insets its children based on system windows using
          android:fitsSystemWindows. -->
@@ -31,19 +34,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             ads:adSize="BANNER"
-            ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+            ads:adUnitId="ca-app-pub-2413724092372090/5450031489">
         </com.google.android.gms.ads.AdView>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/intro_gotit_button"
+            android:text="USB Tethering settings"
             android:id="@+id/dummy_button"
             android:layout_gravity="center_horizontal|bottom"
             android:textSize="@dimen/intro_text_size"
             android:paddingLeft="@dimen/intro_text_size"
             android:paddingRight="@dimen/intro_text_size"
-            android:onClick="closeActivity"
             android:enabled="true" />
 
         </LinearLayout>
